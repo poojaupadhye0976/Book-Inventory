@@ -1,0 +1,160 @@
+/* Container for the entire categories page */
+.categories {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header section */
+  h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Table styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #001F3F;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Button styles */
+  button {
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Green button (Add Category) */
+  button.add {
+    background-color: #28a745;
+  }
+  
+  button.add:hover {
+    background-color: #218838;
+  }
+  
+  /* Blue button (Edit Category) */
+  button.edit {
+    background-color: #007bff;
+  }
+  
+  button.edit:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Red button (Delete Category) */
+  button.delete {
+    background-color: #dc3545;
+  }
+  
+  button.delete:hover {
+    background-color: #c82333;
+  }
+  
+  /* Icon styles */
+  button i {
+    margin-right: 8px;
+  }
+  
+  /* New Category Form Section */
+  h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    margin: 5px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    border-color: #FFD700;
+  }
+  
+  /* Form container */
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Loading state */
+  p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #333;
+    padding: 20px;
+  }
+  
+  /* Message when no user is logged in */
+  p {
+    font-size: 1.2em;
+    color: #FF6347;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    table {
+      font-size: 14px;
+    }
+  
+    input[type="text"] {
+      width: 90%;
+    }
+  
+    button {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+    }
+  
+    h2 {
+      font-size: 1.5em;
+    }
+  
+    h3 {
+      font-size: 1.3em;
+    }
+  }
+  

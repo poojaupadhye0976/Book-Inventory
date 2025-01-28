@@ -1,0 +1,243 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Dashboard Layout */
+.dashboard-container {
+    display: flex;
+    height: 100vh; /* Full height of the viewport */
+    width: 100vw; /* Full width of the viewport */
+    font-family: 'Roboto', Arial, sans-serif;
+    overflow: hidden; /* Prevents scrolling */
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 300px; /* Fixed width for sidebar */
+    background-color: #34495e;
+    color: #ecf0f1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px; /* Remove padding */
+    margin: 0; /* Remove margin */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+.sidebar-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: #ecf0f1;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+.sidebar-menu {
+    list-style-type: none;
+    padding: 40px;
+}
+
+.sidebar-link {
+    display: block;
+    text-align: center;
+    padding: 15px 20px;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background: #3498db;
+    color: #ecf0f1;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.sidebar-link:hover {
+    background: #2980b9;
+    transform: translateX(5px);
+}
+
+/* Main content styles */
+.content {
+    flex: 1; /* Take up remaining space */
+    background-color: #ecf0f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh; /* Full height of the viewport */
+    width: 100vw; /* Full width of the viewport */
+    padding: 40px; /* Add padding around content */
+}
+
+/* Content Title and Paragraph */
+.content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.content p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    color: #7f8c8d;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+/* CRUD Button Styles */
+.crud-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.add-btn, .edit-btn, .delete-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.add-btn {
+    background-color: #27ae60;
+    color: #fff;
+}
+
+.edit-btn {
+    background-color: #f39c12;
+    color: #fff;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.add-btn:hover {
+    background-color: #2ecc71;
+    transform: scale(1.05);
+}
+
+.edit-btn:hover {
+    background-color: #d35400;
+    transform: scale(1.05);
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .dashboard-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        text-align: center;
+    }
+
+    .sidebar-link {
+        margin: 10px auto;
+    }
+
+    .content {
+        padding: 0; /* Remove padding for content on small screens */
+    }
+}
+/* Dashboard container styling */
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #001f3f;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+.category-form {
+    margin-bottom: 20px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.btn {
+    padding: 10px 15px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.add-btn {
+    background-color: #28a745;
+}
+
+.update-btn {
+    background-color: #007bff;
+}
+
+.cancel-btn {
+    background-color: #dc3545;
+}
+
+.edit-btn {
+    background-color: #ffc107;
+    margin-right: 10px;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+}
+
+.categories-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.categories-table th, .categories-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.categories-table th {
+    background-color: #f8f9fa;
+}

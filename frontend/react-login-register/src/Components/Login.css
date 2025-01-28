@@ -1,0 +1,158 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Login Page Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9; /* Light background similar to expense tracking */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: white; /* White container for contrast */
+    padding: 40px; /* Comfortable padding */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 400px; /* Fixed width for form */
+    text-align: center; /* Center align text */
+}
+
+h1 {
+    color: #001F3F; /* Navy blue from expense tracking CSS */
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 24px; /* Larger heading font size */
+    font-weight: bold; /* Emphasized heading */
+}
+
+label {
+    display: block; /* Block display for labels */
+    margin: 10px 0 5px; /* Spacing around labels */
+    font-weight: bold; /* Bold font for emphasis */
+    color: #333; /* Neutral dark gray */
+}
+
+input {
+    width: 100%; /* Full width inputs */
+    padding: 12px; /* Comfortable padding */
+    margin-bottom: 15px; /* Spacing between inputs */
+    border: 1px solid #ccc; /* Subtle border */
+    border-radius: 4px; /* Rounded corners */
+    transition: border-color 0.3s; /* Smooth transition on focus */
+}
+
+input:focus {
+    border-color: #1b1b1b; /* Gold from expense tracking CSS */
+    outline: none; /* Remove outline */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #161615; /* Gold button from expense tracking CSS */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    width: 100%; /* Full width button */
+    font-size: 16px; /* Larger font size */
+    font-weight: bold; /* Emphasized text */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth hover effects */
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #141414; /* Slightly darker gold on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+a {
+    color: #FFD700; /* Gold for links from expense tracking CSS */
+    text-decoration: none; /* No underline */
+    display: block; /* Block display for easy spacing */
+    margin-top: 10px; /* Space above links */
+    font-size: 14px; /* Slightly smaller font */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #FAF3E0; /* Light beige when hovered */
+}
+
+/* Expense Tracking Styles for Login Page */
+input[type="text"],
+input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    margin-right: 10px;
+}
+
+input[type="text"]::placeholder,
+input[type="number"]::placeholder {
+    color: #999;
+}
+
+.expense-table {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: left;
+}
+
+tbody td {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.edit-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+    background-color: #0056b3;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+.total-amount {
+    padding: 10px;
+    text-align: right;
+    background-color: #f2f2f2;
+    font-size: 18px;
+}

@@ -1,0 +1,16 @@
+package com.LoginRegister.example;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+
+@SpringBootApplication(exclude=SecurityAutoConfiguration.class)
+@EnableJpaRepositories(basePackages = "com.LoginRegister.example.repository")
+public class LoginRegisterServerApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(LoginRegisterServerApplication.class, args);
+	}
+
+}
